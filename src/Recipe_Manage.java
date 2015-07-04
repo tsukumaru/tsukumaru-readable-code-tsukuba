@@ -11,7 +11,11 @@ public class Recipe_Manage {
             BufferedReader br = new BufferedReader(new FileReader(new File("recipe-title-data.txt")));
 
             String title = br.readLine();
-            System.out.println(title);
+            while(title != null) {
+                System.out.println(title);
+
+                title = br.readLine();
+            }
 
             br.close();
         }
