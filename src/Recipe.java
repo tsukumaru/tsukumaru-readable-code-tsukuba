@@ -15,6 +15,7 @@ public class Recipe {
     String getName(){ return name;}
     String getMethod(){ return method;}
 
+    //レシピ情報を一つの文字列に
     String getInfoString(){
         return id+" : "+name+" : "+method;
     }
